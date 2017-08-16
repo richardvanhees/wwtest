@@ -1,6 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import retirementRoute from './routes/retirementRoute';
 import bodyParser from 'body-parser';
 
@@ -9,6 +10,7 @@ const app = express();
 
 mongoose.connect('mongodb://localhost/rules');
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('combined'));
