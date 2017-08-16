@@ -18,7 +18,11 @@ class App extends Component {
             <MainContainer>
                 <ContentContainer>
                     <div className="intro">
+                        <h1 className="intro__header">Check your state pension</h1>
                         <div className="intro__text">Enter your birth date and gender</div>
+                    </div>
+                    <div className="calculator">
+
                     </div>
                 </ContentContainer>
             </MainContainer>
