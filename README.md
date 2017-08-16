@@ -6,5 +6,7 @@ This project serves as a technical test for Wealth Wizards. It contains both the
 - Start the API server by running `yarn start-server`.
 - Start the app by either running the development environment with `yarn start` or by building it with `yarn build`.
 
+Make sure that your local database has been populated with the provided ruleset. Populating can be done using `yarn populate`.
+
 ## Team ##
 - *Developer*: Richard van Hees
