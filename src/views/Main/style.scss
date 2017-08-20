@@ -1,12 +1,33 @@
-.intro{
-    &__header{
+.intro {
+    &__header {
 
     }
-    &__text{
+    &__text {
 
     }
 }
 
-.calculator{
+.calculator {
+    display: flex;
+    flex-direction: column;
 
+    &__dropdowns{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        align-self: flex-start;
+        margin: 10px 10px 10px 0;
+    }
+
+    &__result {
+        &-intro {
+            margin: 50px 0 5px 0;
+        }
+        &-date {
+            font-size: 26px;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import Rule from './models/retirementModel';
 
-const data = {
+export const rules = {
     "rules": [
         {
             "from": "1899-12-31",
@@ -510,7 +510,7 @@ const data = {
 
 mongoose.connect('mongodb://localhost/rules');
 
-data.rules.map(entry => {
+rules.rules.map(entry => {
     const rule = new Rule(entry);
     rule.save();
 });
